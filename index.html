@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Valentine Surprise</title>
 
+  <!-- ✅ POPPINS FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       box-sizing: border-box;
@@ -14,7 +17,7 @@
     body {
       margin: 0;
       height: 100vh;
-      font-family: 'Comic Sans MS', cursive;
+      font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
       display: flex;
       justify-content: center;
@@ -34,12 +37,15 @@
     h1 {
       color: #b30059;
       font-size: 2rem;
+      font-weight: 600;
       margin-bottom: 10px;
+      letter-spacing: -0.5px;
     }
 
     p {
       color: #800040;
       font-size: 1.1rem;
+      font-weight: 400;
       margin-bottom: 25px;
       min-height: 40px;
     }
@@ -52,6 +58,8 @@
     button {
       padding: 18px 40px;
       font-size: 1.3rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
       border: none;
       border-radius: 40px;
       position: absolute;
@@ -90,12 +98,14 @@
     .celebration h1 {
       font-size: 2.5rem;
       color: #b30059;
+      font-weight: 700;
       padding: 0 20px;
       animation: pop 1s ease infinite alternate;
     }
 
     .celebration p {
       font-size: 1.2rem;
+      font-weight: 400;
       color: #800040;
       margin-top: 10px;
     }
@@ -139,16 +149,13 @@
 </head>
 <body>
 
-  <!-- 🎵 Background Music (ADD YOUR FILE) -->
+  <!-- 🎵 Background Music -->
   <audio id="bgMusic" loop>
     <source src="Careless Whisper.mp3" type="audio/mpeg">
   </audio>
 
   <div class="container">
-    <!-- ✏️ MAIN QUESTION -->
     <h1>Will you be my Valentine?</h1>
-
-    <!-- ✏️ TEASING / SUBTEXT -->
     <p id="teaseText">"No" seems a bit shy haha</p>
 
     <div class="buttons">
@@ -157,9 +164,7 @@
     </div>
   </div>
 
-  <!-- 🎉 CELEBRATION -->
   <div class="celebration" id="celebration">
-    <!-- ✏️ FINAL MESSAGE -->
     <h1>YOU BELONG TO ME NOW 💖</h1>
     <p>Now send me food for the effort</p>
 
@@ -245,3 +250,4 @@
 
 </body>
 </html>
+
